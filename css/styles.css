@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1a202c; /* Darker hover color */
+}
+
+/* Button Styles */
+button,
+input[type="submit"] {
+  font-family: "Inter", sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:focus,
+input[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #2b6cb0; /* Slightly darker blue on hover */
+}
+
+/* Form Input Styles */
+input,
+textarea {
+  font-family: "Inter", sans-serif;
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3182ce; /* Blue border on focus */
+  outline: none;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+/* Header Styles */
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+header .container .text-center {
+  flex-grow: 1;
+}
+
+/* Fixed Footer Styles */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a202c;
+  color: #f7fafc;
+  text-align: center;
+  padding: 1rem 0;
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+/* Fixed Scroll to Top Button */
+#scrollToTop {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #3182ce; /* Blue background color */
+  color: #ffffff;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+#scrollToTop:hover {
+  background-color: #2b6cb0; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

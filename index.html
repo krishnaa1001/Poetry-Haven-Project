@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poetry Haven | Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <header class="bg-white shadow">
+      <div
+        class="container mx-auto flex items-center justify-between py-4 px-6 relative"
+      >
+        <button id="nav-toggle" class="md:hidden text-gray-600 absolute left-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="h-6 w-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+        <a href="index.html" class="flex-grow text-center md:text-left">
+          <img
+            src="assets/logo.png"
+            alt="Poetry Haven Logo"
+            class="h-12 ml-48"
+          />
+        </a>
+        <nav id="nav-menu" class="hidden md:flex space-x-4 items-center">
+          <ul class="flex space-x-4">
+            <li>
+              <a href="login.html" class="text-gray-600 hover:text-gray-900"
+                >Log In</a
+              >
+            </li>
+            <li>
+              <a
+                href="create-account.html"
+                class="text-gray-600 hover:text-gray-900"
+                >Create Account</a
+              >
+            </li>
+            <li>
+              <a
+                href="search-poet.html"
+                class="text-gray-600 hover:text-gray-900"
+                >Search Poet</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                >Subscribe Now</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div
+        id="mobile-nav-menu"
+        class="md:hidden fixed inset-0 bg-white z-50 hidden"
+      >
+        <button id="nav-close" class="absolute top-4 right-4 text-gray-600">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="h-6 w-6 shift-left"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <nav class="flex flex-col items-center mt-12 space-y-4">
+          <a href="login.html" class="text-gray-600 hover:text-gray-900"
+            >Log In</a
+          >
+          <a
+            href="create-account.html"
+            class="text-gray-600 hover:text-gray-900"
+            >Create Account</a
+          >
+          <a href="search-poet.html" class="text-gray-600 hover:text-gray-900"
+            >Search Poet</a
+          >
+          <a
+            href="#"
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            >Subscribe Now</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 text-center">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">
+        Welcome to Poetry Haven
+      </h1>
+      <p class="text-lg text-gray-700 mb-8">
+        Your home for everything poetry. Discover, create, and share poetry from
+        around the world.
+      </p>
+      <a
+        href="search-poet.html"
+        class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700"
+        >Explore Poets</a
+      >
+
+      <!-- Poet Cards Section -->
+      <section class="mt-8 px-4 sm:px-8 lg:px-2">
+        <h2 class="text-3xl font-semibold text-gray-900 mb-6">
+          Featured Poets
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <!-- Poet 1 -->
+          <div class="bg-white border rounded-lg shadow-md overflow-hidden">
+            <img
+              src="assets/poet1.jpg"
+              alt="Emily Dickinson"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                Emily Dickinson
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Known for her unique style and profound poems, Emily Dickinson
+                is a major American poet.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Emily_Dickinson"
+                class="text-blue-600 hover:underline"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <!-- Poet 2 -->
+          <div class="bg-white border rounded-lg shadow-md overflow-hidden">
+            <img
+              src="assets/poet2.jpg"
+              alt="Langston Hughes"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                Langston Hughes
+              </h3>
+              <p class="text-gray-700 mb-4">
+                A central figure in the Harlem Renaissance, Langston Hughes'
+                poetry speaks to social issues and human experiences.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Langston_Hughes"
+                class="text-blue-600 hover:underline"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <!-- Poet 3 -->
+          <div class="bg-white border rounded-lg shadow-md overflow-hidden">
+            <img
+              src="assets/poet3.jpg"
+              alt="Pablo Neruda"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                Pablo Neruda
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Chilean poet Pablo Neruda is renowned for his passionate and
+                sensuous poems about love and politics.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Pablo_Neruda"
+                class="text-blue-600 hover:underline"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <!-- Poet 4 -->
+          <div class="bg-white border rounded-lg shadow-md overflow-hidden">
+            <img
+              src="assets/poet4.jpg"
+              alt="Rumi"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Rumi</h3>
+              <p class="text-gray-700 mb-4">
+                Rumi's mystical poetry explores themes of love, spirituality,
+                and the nature of existence.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Rumi"
+                class="text-blue-600 hover:underline"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 fixed bottom-0 left-0 w-full">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 Poetry Haven, Inc. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button
+      id="scrollToTop"
+      class="fixed bottom-16 right-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600"
+    >
+      ↑
+    </button>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
